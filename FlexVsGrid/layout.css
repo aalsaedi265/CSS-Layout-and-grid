@@ -1,0 +1,8 @@
+.main-content {
+    width: 95%;
+    max-width: 1000px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr) );
+    
+  }
+  
