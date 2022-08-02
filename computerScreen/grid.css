@@ -6,9 +6,31 @@ max-width: 800px;
   display:grid;
   /*fr meand faction fraction of the image makes it responsive */
   /* 1 fr will make only one, 1 fr 1 fr will make two through out*/
-  grid-template-columns: repeat(auto-fill,200px);
-  grid-template-rows: repeat(2,2fr); 
+  grid-template-columns: repeat(auto-fill,300px);
+  grid-template-rows: repeat(auto-fit,200px); 
   /* grid-column-gap: 20px; */
   /* grid-row-gap: 20px; */
   grid-gap:15px;
+  grid-auto-flow: column;
+}
+
+/*AUTO FILL gerneates as many grid container as need
+to fill the content width */
+
+/* AUTO FIT collapses empty tracks to zero px*/
+.container 
+{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 350px 100px;
+}
+header
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+foorter
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
