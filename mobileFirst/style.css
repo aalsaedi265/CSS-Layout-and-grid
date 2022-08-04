@@ -57,6 +57,14 @@
     
     @media (min-width: 769px)
       {
+    #wrapper
+    {
+    /* calacuate 100% view port hieght - 89px
+    used to make footer stick to the bottom
+    no matter size of the content on the page */
+        min-height: calc(100vh-89px);
+
+    }
     .container
       {
         width:70%;
